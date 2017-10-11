@@ -11,3 +11,11 @@ export const Item = (props) => (
         </div>
 
 );
+
+Item.propTypes ={
+
+    title: PropTypes.string,
+    overview: PropTypes.string,
+    score: PropTypes.number,
+    backdrop: PropTypes.string
+}

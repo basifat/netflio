@@ -17,4 +17,10 @@ export const SearchForm = (props) => (
     )
 
 
- 
+ SearchForm.propTypes ={
+
+    handleTitleChange: PropTypes.func,
+    handleKeyUp: PropTypes.func,
+    searchTerm: PropTypes.string,
+    handleClick: PropTypes.func,
+}

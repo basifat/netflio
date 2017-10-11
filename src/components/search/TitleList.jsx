@@ -87,6 +87,14 @@ class TitleComponent extends Component{
 
 }
 
+TitleComponent.propTypes ={
 
+    fetchMovies: PropTypes.func,
+    url: PropTypes.string,
+    changeState: PropTypes.func,
+    data: PropTypes.object.isRequired,
+    mounted:PropTypes.bool
+
+}
 
 export default TitleComponent
