@@ -20,4 +20,3 @@ Movies with less than 150 characters of description were filtered.
 
 https://enigmatic-cove-42650.herokuapp.com/
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app)
