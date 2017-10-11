@@ -10,6 +10,8 @@ Movies with less than 150 characters of description were filtered.
 - Single movie : Component for individual movie title that belongs to the grid
 - Footer : The Footer component
 
+![Screeshot](netflio.PNG "Netflio screenshot")
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app)
