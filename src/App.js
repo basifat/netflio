@@ -18,9 +18,17 @@ class App extends Component {
     this.handleKeyUp = this.handleKeyUp.bind(this)
     this.changeState = this.changeState.bind(this)
     this.fetchMovies = this.fetchMovies.bind(this)
+    this.handleClick = this.handleClick.bind(this)    
   }
 
   apiKey = '1cad541268c420915e5a75e67a55153d'
+
+  componentDidMount() {
+    var json = require('./initial_data.json');
+    if (this.state.data.length === undefined){
+      this.setState({data:json})
+    }
+  }
 
   changeState(newData){
     this.setState({mounted: newData.mounted, searchUrl: newData.searchUrl})
@@ -46,7 +54,7 @@ class App extends Component {
 
       evt.preventDefault()
   }
-  
+
 
   handleTitleChange(evt){
     
@@ -80,6 +88,8 @@ class App extends Component {
              <div id="content-wrapper" className="mui--text-center">
               <div className="mui--appbar-height">
               </div>
+              <br/>
+              <br/>
           <div> 
               <SearchForm handleClick = {this.handleClick} handleKeyUp={this.handleKeyUp}  handleTitleChange = {this.handleTitleChange}/>
             </div>
