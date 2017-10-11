@@ -38,6 +38,15 @@ class App extends Component {
      }
   }
 
+   handleClick(evt){
+    var searchUrl = "search/multi?api_key=" + this.apiKey + "&query=" + this.state.searchTerm
+      this.setState({
+        searchUrl:searchUrl
+      });
+
+      evt.preventDefault()
+  }
+  
 
   handleTitleChange(evt){
     
