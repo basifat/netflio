@@ -4,7 +4,7 @@ import {Item} from '.'
 import Container from 'muicss/lib/react/container';
 import Row from 'muicss/lib/react/row';
 import PropTypes from 'prop-types';
-import {rightOverview} from '../lib/searchHelpers'
+
 
 
 class TitleComponent extends Component{

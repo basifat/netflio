@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import {SearchForm, NavBar, Footer} from './components/search/'
+import TitleList from './components/search/TitleList'
+
 class App extends Component {
   constructor(props){
     super(props)
@@ -12,6 +14,14 @@ class App extends Component {
 
     this.handleTitleChange = this.handleTitleChange.bind(this)
     this.handleKeyUp = this.handleKeyUp.bind(this)
+    this.changeState = this.changeState.bind(this)
+    this.fetchMovies = this.fetchMovies.bind(this)
+  }
+
+  apiKey = '1cad541268c420915e5a75e67a55153d'
+
+  changeState(newData){
+    this.setState({mounted: newData.mounted, searchUrl: newData.searchUrl})
   }
 
 
