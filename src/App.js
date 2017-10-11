@@ -35,6 +35,17 @@ class App extends Component {
 
   }
 
+  fetchMovies(){
+    var requestUrl = "https://api.themoviedb.org/3/" + this.state.searchUrl
+    fetch(requestUrl).then((response) => {
+      return response.json();
+    }).then((data) =>{
+      this.setState({data:data});
+    }, (err) => {
+      console.log(err);
+    });
+  }
+
    
   render() {
 
