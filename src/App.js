@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import {NavBar, Footer} from './components/search/'
+import {SearchForm, NavBar, Footer} from './components/search/'
 class App extends Component {
   constructor(props){
     super(props)
@@ -48,7 +48,9 @@ class App extends Component {
              <div id="content-wrapper" className="mui--text-center">
               <div className="mui--appbar-height">
               </div>
-       
+          <div> 
+              <SearchForm handleClick = {this.handleClick} handleKeyUp={this.handleKeyUp}  handleTitleChange = {this.handleTitleChange}/>
+            </div>
           </div>
           <Footer/>
           </div>
