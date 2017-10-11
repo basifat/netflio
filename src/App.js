@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import {NavBar} from './components/search/'
+import {NavBar, Footer} from './components/search/'
 class App extends Component {
 
    
@@ -17,6 +17,7 @@ class App extends Component {
               </div>
        
           </div>
+          <Footer/>
           </div>
     );
   }
