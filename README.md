@@ -10,11 +10,14 @@ Movies with less than 150 characters of description were filtered.
 - Single movie : Component for individual movie title that belongs to the grid
 - Footer : The Footer component
 
-## Screenshot
 
+
+## Screenshot
 
 ![Screeshot](netflio.PNG "Netflio screenshot")
 
+## Demo
 
+https://enigmatic-cove-42650.herokuapp.com/
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app)
