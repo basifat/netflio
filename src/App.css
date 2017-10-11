@@ -103,13 +103,7 @@ height:100px;
   vertical-align:middle
 }
 
-/**
- * Content CSS
- */
-/*.maincol{
- display: flex;
-   flex-direction: column;
-}*/
+
 
 #content-wrapper {
   min-height: 100%;
