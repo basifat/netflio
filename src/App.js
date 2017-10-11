@@ -93,8 +93,11 @@ class App extends Component {
           <div> 
               <SearchForm handleClick = {this.handleClick} handleKeyUp={this.handleKeyUp}  handleTitleChange = {this.handleTitleChange}/>
             </div>
+                            <br/>
             <TitleList title="Movie Titles" url = {this.state.searchUrl} fetchMovies={this.fetchMovies} changeState = {this.changeState} data={this.state.data} mounted={this.state.mounted}/>
           </div>
+           <br/>
+           <br/>
           <Footer/>
           </div>
     );
