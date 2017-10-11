@@ -2,9 +2,17 @@ import React, { Component } from 'react';
 import './App.css';
 import {NavBar, Footer} from './components/search/'
 class App extends Component {
+  constructor(props){
+    super(props)
 
+    this.state ={
+      searchTerm: 1,
+      searchUrl: ""
+    }
+  }
    
   render() {
+    
     return (
       <div className="App">
             <header className="mui-appbar mui--z1">
