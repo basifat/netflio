@@ -8,8 +8,10 @@ class App extends Component {
     super(props)
 
     this.state ={
+      data: {},
       searchTerm: 1,
-      searchUrl: ""
+      searchUrl: "",
+      mounted: false,
     }
 
     this.handleTitleChange = this.handleTitleChange.bind(this)
