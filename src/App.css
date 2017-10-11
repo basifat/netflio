@@ -1,0 +1,167 @@
+/**
+ * Body CSS
+ */
+
+html,
+body {
+  height: 100%;
+}
+
+html,
+body,
+input,
+textarea,
+button {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+
+/**
+ * Header CSS
+
+
+ */
+
+/* .App {
+  text-align: center;
+}*/
+
+.right-inner-addon i {
+    position: absolute;
+    right: 0px;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+
+
+input[type=text], select {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: #008CBA; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*input[type=text]:focus {
+    width: 100%;
+}*/
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+}
+
+header ul.mui-list--inline {
+  margin-bottom: 0;
+}
+
+header a {
+  color: white;
+}
+
+.leftdiv {
+
+    margin-right: auto;
+    align-self: flex-end; 
+    justify-self: flex-end;
+}
+
+
+
+.leftimage {
+width:600px;
+height:100px;
+}
+
+
+.righttext{
+    float: none;
+    margin-left: 600px;
+}
+
+.leftname{
+  vertical-align:middle
+}
+
+/**
+ * Content CSS
+ */
+/*.maincol{
+ display: flex;
+   flex-direction: column;
+}*/
+
+#content-wrapper {
+  min-height: 100%;
+
+  /* sticky footer */
+  box-sizing: border-box;
+  margin-bottom: -100px;
+  padding-bottom: 100px;
+}
+
+
+/**
+ * Footer CSS
+ */
+
+footer {
+  box-sizing: border-box;
+  height: 100px;
+  background-color: #eee;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 35px;
+}
+.right_part {
+    width:34%;
+    float:right;
+    /*border:1px solid #000;*/
+
+}
+.left_part {
+    /*border:1px solid #000;*/
+    text-align: left;
+    float:right;
+    width:64%;
+    display:inline-block;
+}
+
+.rcorners {
+    width: 400px;
+    height: 200px;
+    box-sizing: border-box;
+    padding-right: 0px; 
+    padding-left: 100px; 
+    padding-top: 5px; 
+ 
+}
+
+.try{
+  border-radius: 1px solid grey;
+}
+
+.img{
+
+  max-width:100%; 
+  max-height:100%;
+}
