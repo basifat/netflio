@@ -9,10 +9,24 @@ class App extends Component {
       searchTerm: 1,
       searchUrl: ""
     }
+
+    this.handleTitleChange = this.handleTitleChange.bind(this)
+    this.handleKeyUp = this.handleKeyUp.bind(this)
   }
+
+
+
+  handleTitleChange(evt){
+    
+    this.setState({
+      searchTerm: evt.target.value
+    });
+
+  }
+
    
   render() {
-    
+
     return (
       <div className="App">
             <header className="mui-appbar mui--z1">
