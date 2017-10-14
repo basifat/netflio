@@ -6,7 +6,7 @@ export const Item = (props) => (
         <div className="try">
         <Col md="4" className="rcorners">
             <div className="left_part"> <p > <strong> <strong> {props.title} </strong> </strong> </p> <p>{props.overview}</p> <p> <em> Ratings : {props.score}/10 </em></p></div>
-            <div className="right_part"> <img alt="backdrop" src={props.backdrop} width="75" height="75" /> </div>
+            <div className="right_part"> <img alt="backdrop" src={props.backdrop} width="70" height="auto" /> </div>
         </Col>
         </div>
 
